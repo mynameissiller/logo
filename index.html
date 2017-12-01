@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Call of Duty Black Ops 2</title>
+  <link rel="icon" href="https://news.xbox.com/wp-content/uploads/COII_HERO-hero.jpg">
+</head>
+<body>
+
+<canvas id="MyCanvas" width="400" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag</canvas>
+<script>
+
+var c = document.getElementById("MyCanvas");
+var ctx = c.getContext("2d");
+
+/*simple gradient*/
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,400,0)
+grd.addColorStop(0,"black");
+grd.addColorStop(0.5,"orange");
+grd.addColorStop(1,"black");
+// Fill with gradient
+ctx.fillStyle= grd;
+ctx.fillRect(0,0,400,200);
+
+/*text*/
+ctx.font= "100px Comic Sans MS";
+ctx.fillStyle = 'black';
+ctx.fillText("BO2",100,130);
+ctx.font= "50px Comic Sans MS";
+ctx.fillStyle = 'white';
+ctx.fillText("︻デ┳═ー",100,180);
+
+
+</script>
+</body>
+</html>
